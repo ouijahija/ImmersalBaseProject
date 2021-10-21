@@ -51,6 +51,11 @@
               <e p="UniGltfCustomImporter.cs" t="Include" />
             </e>
           </e>
+          <e p="Runtime" t="Include">
+            <e p="Immersal" t="Include">
+              <e p="ImmersalConstants.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="UniGLTF" t="Include">
           <e p="Core" t="Include">
