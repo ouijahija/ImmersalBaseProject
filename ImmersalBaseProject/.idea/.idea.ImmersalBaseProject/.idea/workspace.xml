@@ -22,6 +22,8 @@
     <list default="true" id="05f1c75b-c150-425a-aa2f-cc5fa525a94b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImmersalBaseProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImmersalBaseProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImmersalBaseProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImmersalBaseProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ImmersalEmptyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ImmersalEmptyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/MeshRaycaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/OnRaycastSizeChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/IRaycastSelectable.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/ARPlaneRaycaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/IRaycastSelectable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/OnRaycastColorChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/OnRaycastSizeChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runtime/Raycasting/MeshRaycaster.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1zobVmn6mY2OFlNsqPCQ9gxdWdg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,6 +56,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34985134" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.2998018" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -55,10 +75,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="60628">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="60628" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -74,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634817415636</updated>
       <workItem from="1634817429152" duration="635000" />
+      <workItem from="1635843251525" duration="2679000" />
     </task>
     <servers />
   </component>
@@ -92,8 +113,43 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2049" height="412" key="GridCell.Tab.0.bottom" timestamp="1635846129564">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="412" key="GridCell.Tab.0.bottom/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846129564" />
+    <state width="2049" height="412" key="GridCell.Tab.0.center" timestamp="1635846129564">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="412" key="GridCell.Tab.0.center/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846129564" />
+    <state width="2049" height="412" key="GridCell.Tab.0.left" timestamp="1635846129564">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="412" key="GridCell.Tab.0.left/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846129564" />
+    <state width="2049" height="412" key="GridCell.Tab.0.right" timestamp="1635846129564">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="412" key="GridCell.Tab.0.right/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846129564" />
+    <state width="2049" height="132" key="GridCell.Tab.1.bottom" timestamp="1635846146760">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="132" key="GridCell.Tab.1.bottom/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846146760" />
+    <state width="2049" height="132" key="GridCell.Tab.1.center" timestamp="1635846146759">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="132" key="GridCell.Tab.1.center/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846146759" />
+    <state width="2049" height="132" key="GridCell.Tab.1.left" timestamp="1635846146759">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="132" key="GridCell.Tab.1.left/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846146759" />
+    <state width="2049" height="132" key="GridCell.Tab.1.right" timestamp="1635846146760">
+      <screen x="-2048" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2049" height="132" key="GridCell.Tab.1.right/0.0.2048.1112/-2048.0.2048.1112@-2048.0.2048.1112" timestamp="1635846146760" />
   </component>
 </project>

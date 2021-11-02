@@ -55,6 +55,11 @@
             <e p="Immersal" t="Include">
               <e p="ImmersalConstants.cs" t="Include" />
             </e>
+            <e p="Raycasting" t="Include">
+              <e p="IRaycastSelectable.cs" t="Include" />
+              <e p="MeshRaycaster.cs" t="Include" />
+              <e p="OnRaycastSizeChanger.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="UniGLTF" t="Include">
