@@ -492,7 +492,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989782153835833992}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0.0018278841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -503,7 +503,7 @@ Transform:
   - {fileID: 3073741214564261190}
   m_Father: {fileID: 4427064447004472074}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2437322857416407903
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,12 +560,12 @@ Transform:
   m_GameObject: {fileID: 2883993744131260952}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children:
   - {fileID: 4427064447004472074}
   m_Father: {fileID: 7531979682679670905}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 90}
 --- !u!1 &2902185186635101923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,6 +1349,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7531979682679670905}
+  - component: {fileID: 640848767}
+  - component: {fileID: 640848768}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -1373,6 +1375,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640848767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191447271842812611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be73c6266c650b488b9b85f068cf5e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  graphics: {fileID: 4427064447004472074}
+  target: {fileID: 0}
+  rotationAlignmentSpeed: 2
+--- !u!195 &640848768
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191447271842812611}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.25
+  m_Speed: 1.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7748557579587393709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,7 +1446,7 @@ Transform:
   - {fileID: 8001857365359459548}
   m_Father: {fileID: 6016143761200461160}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!1 &7817943874924934666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,13 +1555,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   stepDuration: 0.3
-  stepHeight: 0.4
+  stepHeight: 0.24
   dontLiftAtTheSameTime:
   - {fileID: 8001857365583958727}
   - {fileID: 8001857365657693362}
   probeHeight: 1
-  triggerRadius: 0.3
-  root: {fileID: 4427064447004472074}
+  triggerRadius: 0.18
+  root: {fileID: 7531979682679670905}
 --- !u!1 &8001857364601726378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,12 +1669,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   stepDuration: 0.3
-  stepHeight: 0.4
+  stepHeight: 0.24
   dontLiftAtTheSameTime:
   - {fileID: 8001857366033171698}
   probeHeight: 1
-  triggerRadius: 0.3
-  root: {fileID: 4427064447004472074}
+  triggerRadius: 0.18
+  root: {fileID: 7531979682679670905}
 --- !u!1 &8001857365145604079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1728,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8001857365359459551}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
   m_Children:
@@ -1702,7 +1744,7 @@ Transform:
   - {fileID: 8001857364903251016}
   m_Father: {fileID: 4427064447004472074}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &8001857365583958745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,13 +1792,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   stepDuration: 0.3
-  stepHeight: 0.4
+  stepHeight: 0.24
   dontLiftAtTheSameTime:
   - {fileID: 8001857364247687202}
   - {fileID: 8001857365657693362}
   probeHeight: 1
-  triggerRadius: 0.3
-  root: {fileID: 4427064447004472074}
+  triggerRadius: 0.18
+  root: {fileID: 7531979682679670905}
 --- !u!1 &8001857365657693364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,13 +1846,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   stepDuration: 0.3
-  stepHeight: 0.4
+  stepHeight: 0.24
   dontLiftAtTheSameTime:
   - {fileID: 8001857364247687202}
   - {fileID: 8001857365583958727}
   probeHeight: 1
-  triggerRadius: 0.3
-  root: {fileID: 4427064447004472074}
+  triggerRadius: 0.18
+  root: {fileID: 7531979682679670905}
 --- !u!1 &8001857365689835065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,12 +1930,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   stepDuration: 0.3
-  stepHeight: 0.4
+  stepHeight: 0.24
   dontLiftAtTheSameTime:
   - {fileID: 8001857364917918634}
   probeHeight: 1
-  triggerRadius: 0.3
-  root: {fileID: 4427064447004472074}
+  triggerRadius: 0.18
+  root: {fileID: 7531979682679670905}
 --- !u!1 &8313411890880367695
 GameObject:
   m_ObjectHideFlags: 0
