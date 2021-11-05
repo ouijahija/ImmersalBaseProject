@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4682760393691964}
   - component: {fileID: 8869940821398010349}
+  - component: {fileID: 8584217482464970856}
   m_Layer: 0
-  m_Name: ImmersalARCloudSDK
+  m_Name: ImmersalSDK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,3 +46,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   developerToken: 
   m_TargetFrameRate: 60
+  m_AndroidResolution: 2
+  m_iOSResolution: 0
+  m_Downsample: 1
+  onPoseLost:
+    m_PersistentCalls:
+      m_Calls: []
+  onPoseFound:
+    m_PersistentCalls:
+      m_Calls: []
+  secondsToDecayPose: 10
+--- !u!114 &8584217482464970856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434895627878410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bf98867974d4a4ba48cc87a2fde8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoStart: 1
+  localizationInterval: 2
+  m_UseFiltering: 1
+  m_ResetOnMapChange: 0
+  m_BurstMode: 1
+  m_UseGeoPoseLocalizer: 1
+  m_UseServerLocalizer: 0
+  m_MapIds: []
