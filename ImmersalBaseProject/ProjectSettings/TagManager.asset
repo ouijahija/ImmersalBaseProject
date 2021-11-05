@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: WorldSpaceUI
+    uniqueID: 3825059307
+    locked: 0
