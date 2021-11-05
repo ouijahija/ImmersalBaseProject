@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ImmersalEmptyScene.unity
+    guid: 031e2c94e0ee92b4ea8ec29f5c24b3a2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d0749712d80c1e14588cf1a6ae2e5697, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 06a4776501a0bfd42a91bb41d6d0cbbb, type: 2}
