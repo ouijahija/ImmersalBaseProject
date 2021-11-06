@@ -26,55 +26,6 @@ MonoBehaviour:
   fastMode:
     overrideState: 1
     value: 1
---- !u!114 &-4233089670291565621
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
-  m_Name: AmbientOcclusion
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  mode:
-    overrideState: 0
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 1
-  color:
-    overrideState: 1
-    value: {r: 0, g: 0.10196079, b: 0.011764707, a: 1}
-  ambientOnly:
-    overrideState: 0
-    value: 1
-  noiseFilterTolerance:
-    overrideState: 0
-    value: 0
-  blurTolerance:
-    overrideState: 0
-    value: -4.6
-  upsampleTolerance:
-    overrideState: 0
-    value: -12
-  thicknessModifier:
-    overrideState: 0
-    value: 1
-  directLightingStrength:
-    overrideState: 0
-    value: 0
-  radius:
-    overrideState: 0
-    value: 0.25
-  quality:
-    overrideState: 0
-    value: 2
 --- !u!114 &-1437799180863911137
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -119,27 +70,7 @@ MonoBehaviour:
   - {fileID: 7971991090069477034}
   - {fileID: -8408622491095987718}
   - {fileID: -1437799180863911137}
-  - {fileID: -4233089670291565621}
-  - {fileID: 5484198105486351812}
---- !u!114 &5484198105486351812
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfcf0f8be58e45b42b61bbddff1cfdf9, type: 3}
-  m_Name: Grayscale
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  blend:
-    overrideState: 1
-    value: 0
+  - {fileID: 8966042015861384751}
 --- !u!114 &7971991090069477034
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -167,7 +98,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.331
+    value: 0.374
   smoothness:
     overrideState: 1
     value: 0.679
@@ -184,3 +115,28 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &8966042015861384751
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6dcd62a2ef34f44490e6f856463dc55, type: 3}
+  m_Name: Scanlines
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  width:
+    overrideState: 1
+    value: 18
+  referenceScreenHeight:
+    overrideState: 0
+    value: 1920
+  color:
+    overrideState: 1
+    value: {r: 0.03799123, g: 0.071, b: 0.03861404, a: 0.21176471}
