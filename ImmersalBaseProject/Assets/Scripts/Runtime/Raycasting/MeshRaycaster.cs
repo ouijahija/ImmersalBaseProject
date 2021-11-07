@@ -7,7 +7,9 @@ public class MeshRaycaster : MonoBehaviour
     private Camera _mainCamera;
 
     private bool _isTouching;
-
+#if UNITY_EDITOR
+    public bool useScreenCenter;
+#endif
 
     void Awake()
     {
@@ -54,6 +56,17 @@ public class MeshRaycaster : MonoBehaviour
     {
         hitPosition = Vector3.negativeInfinity;
         Vector3 touchPosition;
+#if UNITY_EDITOR
+        if (useScreenCenter)
+        {
+            if (Input.GetMouseButtonDown(0))
+                touchPosition = new Vector3(Screen.width / 2f, Screen.height / 2f);
+            else
+                return false;
+
+            return RaycastToMesh(touchPosition, out hitPosition);
+        }
+#endif
 
         if (EventSystem.current.IsPointerOverGameObject())
             return false;

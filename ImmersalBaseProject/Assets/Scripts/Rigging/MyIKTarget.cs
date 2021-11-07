@@ -61,7 +61,9 @@ public class MyIKTarget : MonoBehaviour
             var delta = TriggerCenter - transform.position;
             if (delta.sqrMagnitude > triggerRadius * triggerRadius)
             {
-                triggerCenterDelta = (TriggerCenter - lastTriggerCenter).normalized;
+                triggerCenterDelta = TriggerCenter - lastTriggerCenter;
+                triggerCenterDelta.y = 0;
+                triggerCenterDelta.Normalize();
 
                 lastFixedPos = transform.position;
                 fixedPos = Place(TriggerCenter + triggerCenterDelta * triggerRadius * 0.98f);
@@ -88,9 +90,12 @@ public class MyIKTarget : MonoBehaviour
             var t = Mathf.Clamp01((Time.time - stepTime) / stepDuration);
 
             fixedPos = Place(TriggerCenter + triggerCenterDelta * triggerRadius);
-            SetPosition(Place(Vector3.Lerp(lastFixedPos, fixedPos, t)) + Vector3.up * Mathf.Sin(t * Mathf.PI) * stepHeight);
+            SetPosition(Place(Vector3.Lerp(lastFixedPos, fixedPos, t)) + Vector3.up * Mathf.Sin(t * Mathf.PI) * triggerRadius);
             if (t == 1)
+            {
                 locked = true;
+                SetPosition(fixedPos);
+            }
         }
         lastTriggerCenter = TriggerCenter;
     }

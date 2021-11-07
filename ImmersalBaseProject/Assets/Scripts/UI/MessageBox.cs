@@ -18,6 +18,8 @@ public class MessageBox : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        HideMessage();
     }
 
     public static void ShowMessage(string messageText)
@@ -25,11 +27,20 @@ public class MessageBox : MonoBehaviour
         Instance.StartTexCoroutine(messageText);
     }
 
+    public void HideMessage()
+    {
+        if (textAppearSequence != null)
+            StopCoroutine(textAppearSequence);
+
+        panel.gameObject.SetActive(false);
+    }
+
     public void StartTexCoroutine(string messageText)
     {
         if (textAppearSequence != null)
             StopCoroutine(textAppearSequence);
 
+        panel.gameObject.SetActive(true);
         textAppearSequence = StarttextAppearSequence(messageText);
         StartCoroutine(textAppearSequence);
     }

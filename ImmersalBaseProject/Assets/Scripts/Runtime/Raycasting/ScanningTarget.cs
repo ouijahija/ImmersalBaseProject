@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -10,8 +12,11 @@ public class ScanningTarget : MonoBehaviour, IRaycastSelectable
 
     public Slider progressSlider;
     public AudioSource audioSource;
+    public bool destroyAfterScan = true;
 
+    public UnityEvent onScannStarted;
     public UnityEvent onFinishedScanning;
+
 
     [Header("SFX")]
     public AudioClip startScanning;
@@ -65,6 +70,7 @@ public class ScanningTarget : MonoBehaviour, IRaycastSelectable
 
     private void StartScanning()
     {
+        onScannStarted?.Invoke();
         PlaySound(startScanning);
 
         progressSlider.gameObject.SetActive(true);
@@ -92,7 +98,17 @@ public class ScanningTarget : MonoBehaviour, IRaycastSelectable
         state = State.finished;
         progress = 0;
 
+        MessageBox.ShowMessage("Scan complete: " + name);
         onFinishedScanning?.Invoke();
+
+        if (destroyAfterScan)
+            StartCoroutine(Disappear());
+    }
+
+    private IEnumerator Disappear()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 
     void CancelScanning()
